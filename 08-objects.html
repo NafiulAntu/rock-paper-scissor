@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Objects</title>
+
+</head>
+
+<body>
+
+  <script>
+    /*
+        
+            //***An objects groups multiple values together.
+            //***objects make our code more organized.
+            const product = {
+              name: 'socks',//property value pair
+              price: 1090,
+              // place: 'BD'
+            };
+            //console.log(product);
+            console.log(product);
+            console.log(product.name);
+            console.log(product.price);
+        
+            product.name = 'cotton socks';
+            // product.price = 3000;
+            // console.log(product);
+            console.log(product);
+        
+            product.newProperty = true;
+            product.user = false;
+            console.log(product);
+        
+            // delete product.newProperty;
+            //console.log(product);
+        
+        
+        const product2 = {
+          name: 'shirt',
+          ['delivery-time']: '1 day',
+    
+          rating: {
+            stars: 4.5,
+            count: 87
+          },
+          fun: function function1() {
+            console.log('function inside oblects');//Method=function inside object
+          }
+    
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);//bracket notation,let us use properties that dont work with dot notation.
+    
+        console.log(product2['delivery-time']);
+    
+    
+        console.log(product2.rating.count);
+        product2.fun();
+    
+        console.log(typeof console.log);
+    
+    
+        //JSON = javaScript Object Notation
+        // JSON is more universal.when we send data between comouters.
+        // when we store data.
+        // - a syntax
+        // - similar to javaScript object 
+        // - but has less features
+    
+        console.log(JSON.stringify(product2));
+    
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+    
+    */
+
+
+    console.log('hello'.length);
+
+    console.log('hello'.toUpperCase());
+
+    const object1 = {
+
+      message: 'hello'
+    };
+
+
+    const object2 = object1;
+
+    object1.message = 'good job!';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+
+      message: 'GOOD'
+    };
+
+    console.log(object3 === object1);
+
+    console.log(object2 === object1);
+
+
+
+    const object4 = {
+
+      message: 'GOOD',
+      price: 9000
+    };
+    // const message = object4.message;
+
+    const { message, price } = object4;
+    console.log(message);
+    console.log(price);
+
+    const object5 = {
+
+      // message: message
+      message,
+      //method: function function1() {
+      //console.log(method)
+      //}
+    };
+
+    console.log(object5);
+
+    object5.method();
+
+
+
+
+  </script>
+</body>
+
+</html>
