@@ -1,10 +1,14 @@
   body {
-    background-color: rgb(25, 25, 25);
-    text-align: center;
-     position: static;
-    top: 300px;
+     background-color: rgb(25, 25, 25);
     color: white;
     font-family: Arial;
+    
+    /* Flexbox properties for centering */
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;  /* Removes default margin */
   }
 
   .title {
