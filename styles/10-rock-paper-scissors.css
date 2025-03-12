@@ -1,6 +1,8 @@
   body {
     background-color: rgb(25, 25, 25);
     text-align: center;
+     position: static;
+    top: 50px;
     color: white;
     font-family: Arial;
   }
